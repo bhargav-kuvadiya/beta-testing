@@ -18,5 +18,12 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('dashboard.urls', namespace='beta_dashboard')),
     path('blog/', include('blog.urls', namespace='beta_blog')),
+    path('custom_ad/', include('custom_ad.urls', namespace='beta_custom_ad')),
+    path('ep/', include('ep.urls', namespace='beta_ep')),
+    path('it/', include('it.urls', namespace='beta_it')),
+    path('projects/', include('projects.urls', namespace='beta_projects')),
+    path('sit/', include('sit.urls', namespace='beta_sit')),
+
 ]

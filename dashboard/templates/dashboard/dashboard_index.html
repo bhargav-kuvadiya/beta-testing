@@ -1,0 +1,15 @@
+{% extends 'dashboard/dashboard_base.html' %}
+{% block body_block %}
+    <h1>Beta Dashboard Homepage</h1>
+    <h6>{{ current_index }}</h6>
+    
+    <ol>
+        <li><a href="{% url 'blog:blog_index' %}">Blog</a></li>
+        <li><a href="{% url 'custom_ad:custom_ad_index' %}">Custom Ad</a></li>
+        <li><a href="{% url 'ep:ep_index' %}">Ep</a></li>
+        <li><a href="{% url 'it:it_index' %}">It</a></li>
+        <li><a href="{% url 'projects:projects_index' %}">Projects</a></li>
+        <li><a href="{% url 'sit:sit_index' %}">Sit</a></li>
+        <li><a href="{% url 'dashboard:dashboard_index' %}">Dashboard</a></li>
+    </ol>
+{% endblock %}
